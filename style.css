@@ -1,0 +1,736 @@
+/**********************/
+
+
+/* GENERAL COMPONENTS */
+
+
+/**********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik" sans-serif;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.header-e-main {
+    background-image: url(img/fundo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.conteudo {
+    position: relative;
+}
+
+/**********************/
+
+
+/* HEADER */
+
+
+/**********************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    height: 10rem;
+    padding: 0 4.8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    height: 26rem;
+    padding-top: 9rem;
+    padding-left: 6rem;
+}
+
+
+/**********************/
+
+
+/* NAVIGATION */
+
+
+/**********************/
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #BE8C63;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #1E3713;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #BE8C63;
+}
+
+
+/**********************/
+
+
+/* MAIN SECTION */
+
+
+/**********************/
+
+.main-text {
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: -0.6px;
+    margin-bottom: 3.8rem;
+}
+
+.section-main {
+    /*background-color: #E4D1B9;*/
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.main {
+    height: 70rem;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.main-img {
+    width: 90%;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: #1E3713;
+    color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #BE8C63;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: #fff;
+    color: #614124;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: #E4D1B9;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem;
+}
+
+
+/******************/
+
+
+/* LOGOS SECTION  */
+
+
+/******************/
+
+.section-logos {
+    padding: 4.0rem 0 3.0rem 0;
+}
+
+.texto-logos {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.8rem;
+    color: #777;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 2.8rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+
+/************************/
+
+
+/* SECTION SOBRE O CAFÉ */
+
+
+/************************/
+
+.titulo-section {
+    display: block;
+    font-size: 2.0rem;
+    font-weight: 700;
+    color: #1E3713;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.75px;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.intro-section {
+    font-size: 3.8rem;
+    line-height: 1.05;
+    margin-bottom: 4.0rem;
+    font-weight: 700;
+    color: #614124;
+    letter-spacing: -0.5px;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.titulo-historia {
+    font-size: 3.0rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    font-weight: 700;
+    color: #614124;
+    letter-spacing: -0.5px;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grip--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.section-sobre {
+    padding: 9.6rem 0;
+}
+
+.parte-historia {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #d5e7cc;
+    margin-bottom: 1.2rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.descricao-historia {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    color: #333;
+}
+
+.img-historia {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hist-img {
+    width: 80%;
+    border-radius: 20px;
+    border: 10px solid #63994a;
+}
+
+
+/********************/
+
+
+/* SECTION MENU */
+
+
+/********************/
+
+.center-text {
+    text-align: center;
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1FR);
+    gap: 4rem;
+}
+
+.section-produtos {
+    padding: 9.6rem 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.margin-bottom-md {
+    margin-bottom: 2rem;
+}
+
+.produto {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.produto:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.produto-conteudo {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.produtos-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.tag--salgado {
+    background-color: #ffd43b;
+}
+
+.tag--doce {
+    background-color: rgb(230, 166, 177);
+}
+
+.tag--bebida {
+    background-color: rgb(87, 197, 87);
+}
+
+.produto-nome {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.produto-descricao {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.produto-inf {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.produto-icone1 {
+    height: 6rem;
+    width: 6rem;
+    color: #3a6d24;
+}
+
+.produto-icone2 {
+    height: 3rem;
+    width: 3rem;
+    color: #3a6d24;
+}
+
+.produto-img {
+    width: 100%
+}
+
+
+/********************************/
+
+
+/* DEPOIMENTOS/GALERIA SECTION  */
+
+
+/********************************/
+
+.section-depoimentos {
+    background-color: #d5e7cc;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.depoimentos-container {
+    padding: 9.6rem;
+}
+
+.depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.depoimento-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.depoimento-texto {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.depoimento-nome {
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.galeria-item {
+    overflow: hidden;
+}
+
+.galeria-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.1);
+}
+
+
+/**************************/
+
+
+/* ADICIONAL INFORMAÇÕES  */
+
+
+/**************************/
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+}
+
+.section-adicional-info {
+    padding: 4rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.ad-info-icon {
+    color: #3a6d24;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #d5e7cc;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+
+.ad-info-titulo {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.ad-info-texto {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+
+/************************/
+
+
+/* FALE CONOSCO SECTION */
+
+
+/************************/
+
+.section-fc {
+    padding: 4.8rem 0 12.8rem 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.fc {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*background-color: #e67e22;*/
+    box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.15);
+    height: 60rem;
+    border-radius: 11px;
+    background-image: linear-gradient(to right bottom, #d5e7cc, #418823);
+    overflow: hidden;
+}
+
+.fc-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #333;
+}
+
+.fc .intro-section {
+    color: #1E3713;
+}
+
+.fc-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+    padding: 2rem;
+}
+
+.fc-img-box {
+    background-image: linear-gradient(to right bottom, rgba(80, 139, 55, 0.3), rgba(213, 231, 204, 0.30)), url('img/imgform.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.fc-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.fc-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.fc-form input,
+.fc-form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+}
+
+.fc-form textarea {
+    height: 16rem;
+}
+
+.fc-form input::placeholder {
+    color: #aaa;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 7rem;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn--form {
+    background-color: #1E3713;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fff;
+    color: #555;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+
+/**********/
+
+
+/* FOOTER */
+
+
+/**********/
+
+.footer {
+    padding: 10rem;
+    border-top: 1px solid #eee;
+    position: relative;
+    margin-top: 100px;
+}
+
+.footer .grid--2-cols {
+    grid-template-columns: 2fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.ft-logo {
+    height: 10rem;
+    width: 10rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.direitos {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+
+.footer-titulos {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contatos {
+    font-style: none;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-right: 5rem;
+}
+
+.endereco {
+    margin-bottom: 2.4rem;
+    color: #767676;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}
